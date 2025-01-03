@@ -3,15 +3,15 @@ const unlockTiers = [2,3,4,6,10,15,23,33]
 
 const Dimensions = [ //Dimension stats
   {name: "Shards", dimensionArray: 0, cooldown: 0, cooldownID: 0},
-  {name: "TimeDim1", dimensionArray: 0, cooldown: 300, cooldownID: 27}, //5mins
-  {name: "TimeDim2", dimensionArray: 1, cooldown: 900, cooldownID: 28}, //15mins
-  {name: "TimeDim3", dimensionArray: 2, cooldown: 3600, cooldownID: 29}, //1h
-  {name: "TimeDim4", dimensionArray: 3, cooldown: 7200, cooldownID: 30}, //2h
-  {name: "TimeDim5", dimensionArray: 4, cooldown: 21600, cooldownID: 31}, //6h
-  {name: "TimeDim6", dimensionArray: 5, cooldown: 43200, cooldownID: 32}, //12h
-  {name: "TimeDim7", dimensionArray: 6, cooldown: 86400, cooldownID: 33}, //1d
-  {name: "TimeDim8", dimensionArray: 7, cooldown: 129600, cooldownID: 34}, //1d 12h
-  {name: "TimeDim9", dimensionArray: 8, cooldown: 172800, cooldownID: 35}, //2d
+  {name: "TimeDim1", dimensionArray: 0, cooldown: 1, cooldownID: 27}, //5mins
+  {name: "TimeDim2", dimensionArray: 1, cooldown: 3, cooldownID: 28}, //15mins
+  {name: "TimeDim3", dimensionArray: 2, cooldown: 10, cooldownID: 29}, //1h
+  {name: "TimeDim4", dimensionArray: 3, cooldown: 20, cooldownID: 30}, //2h
+  {name: "TimeDim5", dimensionArray: 4, cooldown: 30, cooldownID: 31}, //6h
+  {name: "TimeDim6", dimensionArray: 5, cooldown: 40, cooldownID: 32}, //12h
+  {name: "TimeDim7", dimensionArray: 6, cooldown: 50, cooldownID: 33}, //1d
+  {name: "TimeDim8", dimensionArray: 7, cooldown: 60, cooldownID: 34}, //1d 12h
+  {name: "TimeDim9", dimensionArray: 8, cooldown: 120, cooldownID: 35}, //2d
 ]
 //Shards for a tier: 5^x -1 basically
 function ShardToTier(x) {return Math.floor(Math.log(x+1)/Math.log(5)) + 1}

@@ -1,10 +1,10 @@
 const FightingButtons = [ //Stats of the xpboost buttons
-  {name: "Test", level: 0, xpboost: 0, cooldown: 60, cooldownID: 0, unlock: 0},
-  {name: "Area1", cooldown: 3600, cooldownID: 21, unlock: 21},
-  {name: "Area2", cooldown: 3600, cooldownID: 22, unlock: 2},
-  {name: "Area3", cooldown: 3600, cooldownID: 26, unlock: 25},
-  {name: "placeholder", cooldown: 3600, cooldownID: 26, unlock: 25},
-  {name: "Area4", cooldown: 3600, cooldownID: 44, unlock: 29},
+  {name: "Test", level: 0, xpboost: 0, cooldown: 1, cooldownID: 0, unlock: 0},
+  {name: "Area1", cooldown: 60, cooldownID: 21, unlock: 21},
+  {name: "Area2", cooldown: 60, cooldownID: 22, unlock: 2},
+  {name: "Area3", cooldown: 60, cooldownID: 26, unlock: 25},
+  {name: "placeholder", cooldown: 60, cooldownID: 26, unlock: 25},
+  {name: "Area4", cooldown: 60, cooldownID: 44, unlock: 29},
 ]
 
 //All of fighting stuff will be added here
@@ -141,7 +141,7 @@ function openCloseEnemiesTab() {
           totalWeight -= starterEnemiesChances[i][1]
         }
       }
-     game.buttonCooldowns[21] = 3600 / (game.itemCooldown * game.tierCooldown * game.artifactsCooldown) //1h
+     game.buttonCooldowns[21] = 60 / (game.itemCooldown * game.tierCooldown * game.artifactsCooldown) //1h
     }
     if (x==2) {
       for (i=0;i<intermediateEnemiesChances.length;i++) totalWeight += intermediateEnemiesChances[i][1]
@@ -154,7 +154,7 @@ function openCloseEnemiesTab() {
           totalWeight -= intermediateEnemiesChances[i][1]
         }
       }
-     game.buttonCooldowns[22] = 21600 / (game.itemCooldown * game.tierCooldown * game.artifactsCooldown) //6h
+     game.buttonCooldowns[22] = 300 / (game.itemCooldown * game.tierCooldown * game.artifactsCooldown) //6h
     }
     if (x==3) {
       for (i=0;i<advancedEnemiesChances.length;i++) totalWeight += advancedEnemiesChances[i][1]
@@ -167,7 +167,7 @@ function openCloseEnemiesTab() {
           totalWeight -= advancedEnemiesChances[i][1]
         }
       }
-     game.buttonCooldowns[26] = 86400 / (game.itemCooldown * game.tierCooldown * game.artifactsCooldown) //24h
+     game.buttonCooldowns[26] = 600 / (game.itemCooldown * game.tierCooldown * game.artifactsCooldown) //24h
     }
     if (x==5) {
       for (i=0;i<frozenEnemiesChances.length;i++) totalWeight += frozenEnemiesChances[i][1]
@@ -180,7 +180,7 @@ function openCloseEnemiesTab() {
           totalWeight -= frozenEnemiesChances[i][1]
         }
       }
-     game.buttonCooldowns[44] = 181850 / (game.itemCooldown * game.tierCooldown * game.artifactsCooldown) //Around 2.1d, random number lol 
+     game.buttonCooldowns[44] = 900 / (game.itemCooldown * game.tierCooldown * game.artifactsCooldown) //Around 2.1d, random number lol 
     }
     if (x==4) {
       game.currentHP = game.HP
@@ -188,7 +188,7 @@ function openCloseEnemiesTab() {
       if (document.getElementById("dailyMessagesDiv").style.display == "block") {openCloseMessages(0)}
       openCloseMessages(3)
       attackBoss()
-    game.buttonCooldowns[36] = 43200 / (game.itemCooldown * game.tierCooldown * game.artifactsCooldown) //12h
+    game.buttonCooldowns[36] = 450 / (game.itemCooldown * game.tierCooldown * game.artifactsCooldown) //12h
     }
     else {
     if (document.getElementById("dailyMessagesDiv").style.display == "block") {openCloseMessages(0)}
