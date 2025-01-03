@@ -26,11 +26,11 @@ function clickButton(x) {
 
 const XPBoostButtons = [ //Stats of the xpboost buttons
   {name: "Test", xpboost: 0, cooldown: 60, cooldownID: 0, unlock: 0},
-  {name: "XPBbutton1", xpboost: 0.01, cooldown: 10, cooldownID: 12, unlock: 13},
-  {name: "XPBbutton2", xpboost: 0.02, cooldown: 20, cooldownID: 15, unlock: 15},
-  {name: "XPBbutton3", xpboost: 0.03, cooldown: 60, cooldownID: 19, unlock: 16},
-  {name: "XPBbutton4", xpboost: 0.05, cooldown: 120, cooldownID: 41, unlock: 18},
-  {name: "XPBbutton5", xpboost: 0.1, cooldown: 300, cooldownID: 42, unlock: 20},
+  {name: "XPBbutton1", xpboost: 0.01, cooldown: 1, cooldownID: 12, unlock: 13},
+  {name: "XPBbutton2", xpboost: 0.02, cooldown: 2, cooldownID: 15, unlock: 15},
+  {name: "XPBbutton3", xpboost: 0.03, cooldown: 3, cooldownID: 19, unlock: 16},
+  {name: "XPBbutton4", xpboost: 0.05, cooldown: 10, cooldownID: 41, unlock: 18},
+  {name: "XPBbutton5", xpboost: 0.1, cooldown: 30, cooldownID: 42, unlock: 20},
 ]
 
   function click2Button(x) { //Will work for any of them individually
@@ -44,12 +44,12 @@ const XPBoostButtons = [ //Stats of the xpboost buttons
   
 const StatButtons = [
   {name: "Test", stats: 0, cooldown: 60, cooldownID: 0, unlock: 0},
-  {name: "StatButton1", stats: 5, cooldown: 3600, cooldownID: 20, unlock: 21},
-  {name: "StatButton2", stats: 20, cooldown: 10, cooldownID: 25, unlock: 24},
-  {name: "StatButton3", stats: 50, cooldown: 20, cooldownID: 37, unlock: 26},
-  {name: "StatButton4", stats: 120, cooldown: 60, cooldownID: 38, unlock: 27},
-  {name: "StatButton5", stats: 600, cooldown: 120, cooldownID: 45, unlock: 30},
-  {name: "StatButton6", stats: 1200, cooldown: 300, cooldownID: 46, unlock: 31},
+  {name: "StatButton1", stats: 5, cooldown: 1, cooldownID: 20, unlock: 21},
+  {name: "StatButton2", stats: 20, cooldown: 5, cooldownID: 25, unlock: 24},
+  {name: "StatButton3", stats: 50, cooldown: 10, cooldownID: 37, unlock: 26},
+  {name: "StatButton4", stats: 120, cooldown: 15, cooldownID: 38, unlock: 27},
+  {name: "StatButton5", stats: 600, cooldown: 5, cooldownID: 45, unlock: 30},
+  {name: "StatButton6", stats: 1200, cooldown: 1, cooldownID: 46, unlock: 31},
 ]
 
   function click3Button(x) {
